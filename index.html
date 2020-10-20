@@ -6,18 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech-Starter Chat</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase.js "></script>
+    <script src="login.js"></script>
+
 </head>
 
 <body>
 
 
-    <input type="email" placeholder="Email" /><br>
-    <input type="password" placeholder="Password">
+
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <br>
+            <br>
+
+            <div class="fadeIn first">
+                <img src="https://static.wixstatic.com/media/57d619_3973011a65254d3e8ec1a901e9f853ee~mv2.png" width="185" height="107" />
+                <br>
+            </div>
+
+            <form>
+                <input type="text" id="email" class="fadeIn second" name="login" placeholder="Email">
+                <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
+                <br>
+                <input type=peen class="fadeIn fourth" id="submitLogin" value="Log In">
+            </form>
 
 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase.js "></script>
-    <script src="login.js "></script>
+            <div id="formFooter">
+                <a class="underlineHover" href="forgotpassword.html">Forgot Password?</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("submitLogin").addEventListener("click", function() {
+            logIn()
+        });
+    </script>
 
 </body>
 
