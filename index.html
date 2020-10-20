@@ -243,15 +243,7 @@
                           " >" +
                           s.val().msg +
                           "</div></div>";
-                      else
-                        document.querySelector(".message-body").innerHTML +=
-                          '<div class="message-holder"><div class="my-text" onclick="deleteMsg(\'' +
-                          s.key +
-                          "')\" id=" +
-                          s.key +
-                          ">" +
-                          s.val().msg +
-                          "</div></div>";
+                      else document.querySelector(".message-body").innerHTML += '<div class="message-holder"><div class="my-text" onclick="deleteMsg(\'' + s.key + "')\" id=" + s.key + ">" + s.val().msg + "</div></div>";
                     } else {
                       if (id !== s.val().user)
                         document.querySelector(".message-body").innerHTML +=
@@ -295,10 +287,7 @@
               }).then((e) => {
                 console.log(e);
                 if (e)
-                  firebase
-                    .database()
-                    .ref("Chat/Msg" + key)
-                    .set({ user: me, msg: "<i>Message Erased</i>" });
+                  firebase.database().ref("Chat/Msg" + key).set({ user: me, msg: "<i>Message Erased</i>" });
               });
             }
         </script>
