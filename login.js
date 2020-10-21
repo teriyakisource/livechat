@@ -1,3 +1,5 @@
+
+
 var firebaseConfig = {
     apiKey: "AIzaSyCquGd_ivIEsGUrkKzRp_VFCBebMO3Ne0k",
     authDomain: "livechat-87c6b.firebaseapp.com",
